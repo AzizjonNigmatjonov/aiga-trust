@@ -1,5 +1,6 @@
 // COLORS
 $main-color: #030A1B;
+$main-background: #51648E;
 *,*::after,*::before {
   list-style-type: none;
   box-sizing: border-box;
@@ -186,17 +187,7 @@ h1,h2,h3,h4,h5,h6 {
 $icon-size    : 40px;
 $border-radius: 0.5;//15% = 0.15, 50% = 0.50 etc.
 
-$background   : #2d2c3e;
-$background-b : #2d2c3e;
-
 // Icon Colors
-$green        : #16A085;
-$red          : rgb(255, 0, 0);
-$green-l      : rgb(64, 93, 230);
-$orange       : #EB9532;
-$purple       : rgb(255, 0, 0);
-
-// Text
 $white      : #FFFFFF;
 .icon{
   cursor: pointer;
@@ -224,17 +215,7 @@ $white      : #FFFFFF;
     color: $white;
     font-size: $icon-size/2;
     transition: all 0.25s ease;
-  }
-}
-
-.icon-enter{
-  &::before{
-    border-radius: 0;
-    margin-left: -100%;
-    box-shadow: inset 0 0 0 $icon-size $green;
-  }
-  &:hover::before{
-    margin-left: 0;
+    z-index: 3;
   }
 }
 
@@ -244,36 +225,40 @@ $white      : #FFFFFF;
   }
   &:hover::before{
     box-shadow: 
-    inset 0 $icon-size/2 0 0 $green-l,
-    inset 0 $icon-size/-2 0 0 $green-l;
+    inset 0 $icon-size/2 0 0 $main-color,
+    inset 0 $icon-size/-2 0 0 $main-color;
   }
 }
 
-.icon-rotate{
-  &::after, &::before{
-    border: 0px solid transparent;
-  }
-  &:hover::before{
-    transition:
-    border-top-width 0.3s ease,
-    border-top-color 0.3s ease;
-    border-width: $icon-size;
-    border-top-color: $red;
-  }
-  &:hover::after{
-    transition:
-    border-left-width 0.3s ease,
-    border-left-color 0.3s ease;
-    border-width: $icon-size;
-    border-left-color: $red;
-  }
-  &:hover{
-    transition: background 0.001s ease 0.3s;
-    background: $red;
-  }
-  img{
-    z-index: 1;
-  }
+.line-animation {
+  position: relative;
+  width: auto;
+  display: inline-block;
+}
+.line-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: $main-color;
+  bottom: -7px;
+  left: 0;
+  border-radius: 10px;
+}
+.line-animation:hover {
+  color: $main-color !important;
+}
+.line-animation:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: $main-color !important;
+  bottom: -7px;
+  left: 0%;
+  border-radius: 10px;
+  -webkit-transition: width 0.3s;
+  transition: width 0.3s;
 }
 
 .container {
@@ -328,6 +313,61 @@ svg {
   color: white;
   font-size: 18px;
   font-weight: 100;
+}
+
+.submit {
+  box-sizing: border-box;
+  display: flex;
+  
+  &:hover,
+  &:focus {
+    color: #fff;
+    outline: 0;
+  }
+}
+
+.third {
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 0 40px 40px $main-background inset, 0 0 0 0 $main-background;
+  transition: all 150ms ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 0 10px 0 $main-background inset, 0 0 10px 4px $main-background;
+  }
+}
+
+
+.form-input-anim {
+  position: relative;
+  overflow: hidden;
+  
+  label {
+    position: absolute;
+    left: 30px;
+    width: 100%;
+    top: -14px;
+    height: 100%;
+    pointer-events: none;
+  }
+  .content-name {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
+  }
+  input:focus + .label-name .content-name,
+  input:valid + .label-name .content-name {
+    transform: translateY(-110%);
+    font-size: 12px;
+    left: 0px;
+  }
+  
+  input:focus + .label-name::after,
+  .form input:valid + .label-name::after {
+    transform: translateX(0%);
+  }
 }
 
 html {

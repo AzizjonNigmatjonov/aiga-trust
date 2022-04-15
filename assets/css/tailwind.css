@@ -734,6 +734,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 120px;
 }
 
+.mt-\[-70px\] {
+  margin-top: -70px;
+}
+
+.mt-\[-50px\] {
+  margin-top: -50px;
+}
+
 .inline-block {
   display: inline-block;
 }

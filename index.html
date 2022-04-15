@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="icon" href="../assets/logo.svg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
 
@@ -21,7 +22,7 @@
         <div class="px-[15px] py-[30px] relative flex flex-col items-center justify-center group">
             <img src="../assets/images/icons/direction-right-arrow.svg"
                 class="absolute left-[-10px] top-1/2 -translate-y-1/2 group-hover:left-0 duration-300" alt="">
-            <a href="#" class="icon icon-collapse flex items-center justify-center">
+            <a href="#modal-center"  class="icon icon-collapse flex items-center justify-center" uk-toggle >
                 <img width="24px" src="../assets/images/icons/phone.svg" alt="">
             </a>
             <a href="#" class="icon icon-collapse flex items-center justify-center">
@@ -30,6 +31,21 @@
             <a href="#" class="icon icon-collapse flex items-center justify-center">
                 <img width="24px" src="../assets/images/icons/youtube.svg" alt="">
             </a>
+        </div>
+    </div>
+
+    <div id="modal-center" class="uk-flex-top " uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical rounded p-[80px]">
+    
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="flex flex-col items-center w-full">
+             <h3 class="text-[#333333] text-[24px] font-[700]">Raqamingizni qoldiring!</h3>
+             <form>
+                <input class="uk-input w-full rounded my-6 outline-[#51648E] uk-form-width-medium  h-[55px]" type="text" placeholder="Enter your name">
+                <input class="uk-input w-full rounded my-6 outline-[#51648E] uk-form-width-medium h-[55px]" type="number" placeholder="+998 99 500 00 00">
+                <button class="uk-button uk-button-default w-full bg-[#51648E] text-[#fff] rounded py-2 text-[22px]">OK</button>
+            </form>       
+            </div>
         </div>
     </div>
 
@@ -57,17 +73,22 @@
                                     </a>
                                 </li>
                                 <li class="animLeft">
-                                    <a href="" class="">
+                                    <a href="product.html" class="">
                                         Products
                                     </a>
                                 </li>
                                 <li class="animLeft">
-                                    <a href="" class="">
+                                    <a href="about.html" class="">
                                         About us
                                     </a>
                                 </li>
                                 <li class="animLeft">
-                                    <a href="" class="">
+                                    <a href="shopping.html" class="">
+                                        Shopping
+                                    </a>
+                                </li>
+                                <li class="animLeft">
+                                    <a href="brands.html" class="">
                                         Projects
                                     </a>
                                 </li>
@@ -108,7 +129,7 @@
 
                             <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas">
                                 <div class="uk-offcanvas-bar mobile-navbar">
-                                    <div class="uk-flex uk-flex-right">
+                                    <div class="flex justify-end">
                                         <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close="">
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
                                                 height="24">
@@ -123,10 +144,11 @@
                                                     y2="13"></line>
                                                 <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1"
                                                     y2="13"></line>
-                                            </svg></button>
+                                            </svg>
+                                        </button>
                                     </div>
 
-                                    <ul class="mt-[50px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
+                                    <ul class="mt-[30px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
                                         uk-grid=""
                                         uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
                                         <li class="uk-flex uk-flex-right">
@@ -139,7 +161,7 @@
                                             <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
                                         </div>
                                         <li class="uk-flex uk-flex-right">
-                                            <a href="" class="font-500 animBottom" style="visibility: hidden;">
+                                            <a href="product.html" class="font-500 animBottom" style="visibility: hidden;">
                                                 Products
                                             </a>
                                         </li>
@@ -147,7 +169,7 @@
                                             <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
                                         </div>
                                         <li class="uk-flex uk-flex-right">
-                                            <a href="" class="font-500 animBottom" style="visibility: hidden;">
+                                            <a href="about.html" class="font-500 animBottom" style="visibility: hidden;">
                                                 About us
                                             </a>
                                         </li>
@@ -155,7 +177,15 @@
                                             <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
                                         </div>
                                         <li class="uk-flex uk-flex-right">
-                                            <a href="" class="font-500 animBottom" style="visibility: hidden;">
+                                            <a href="Shpping.html" class="font-500 animBottom" style="visibility: hidden;">
+                                                Shopping
+                                            </a>
+                                        </li>
+                                        <div>
+                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                        </div>
+                                        <li class="uk-flex uk-flex-right">
+                                            <a href="brands.html" class="font-500 animBottom" style="visibility: hidden;">
                                                 Projects
                                             </a>
                                         </li>
@@ -489,7 +519,7 @@
 
     <footer class="uk-section">
         <div class="uk-container">
-            <ul class="p-0 justify-between uk-grid-large" uk-grid>
+            <ul class="p-0 sm:justify-between uk-grid-large" uk-grid>
                 <li class="sm:w-[360px]">
                     <a href="index.html" class="inline-block">
                         <img class="w-[140px]" src="../assets/images/icons/logo.svg" alt="logo">
@@ -515,7 +545,7 @@
                         </a>
                     </div>
                 </li>
-                <li class="flex flex-col space-y-[15px] text-[#030A1B]">
+                <li class="flex flex-col space-y-[15px] text-[#030A1B] w-[50%] sm:w-auto">
                     <h3 class="main-color font-[600] text-[22px] pb-[10px]">About</h3>
                     <a href="#" class="main-color-p font-medium line-animation">Company</a>
                     <a href="#" class="main-color-p font-medium line-animation">Team</a>
@@ -523,22 +553,30 @@
                     <a href="#" class="main-color-p font-medium line-animation">Blogs</a>
                 </li>
                 <li class="flex flex-col space-y-[15px] text-[#030A1B]">
-                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">About</h3>
-                    <a href="#" class="main-color-p font-medium line-animation">Company</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Team</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Career</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Blogs</a>
+                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">Brands</h3>
+                    <a href="#" class="main-color-p font-medium line-animation">Isover</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Preasantation</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Management</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Dashboard</a>
                 </li>
                 <li class="flex flex-col space-y-[15px] text-[#030A1B]">
-                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">About</h3>
-                    <a href="#" class="main-color-p font-medium line-animation">Company</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Team</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Career</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Blogs</a>
+                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">Address</h3>
+                    <a href="#" class="main-color-p font-medium line-animation">Country Delevery</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Counter Beach Post</a>
+                    <a href="#" class="main-color-p font-medium line-animation">www.itobd.com</a>
+                    <a href="#" class="main-color-p font-medium line-animation">+880176565655</a>
                 </li>
             </ul>
         </div>  
     </footer>
+
+    <div id="overlay" class="uk-position-fixed uk-width-1-1 uk-height-1-1 uk-position-top-left uk-flex uk-flex-center uk-flex-middle" style="z-index: 10001; background-color: rgb(255, 255, 255) !important; display: none;">
+        <div id="loader" class="w-full h-full">
+            <div class="bg-[#51648E] w-full h-full flex items-center flex-col justify-center">
+                <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>
+    </div>
 
     <script src="../assets/js/uikit-icons.min.js"></script>
     <script src="../assets/js/uikit.min.js"></script>

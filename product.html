@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../assets/css/custom.css">
     <link rel="icon" href="../assets/logo.svg">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
 
@@ -21,7 +23,7 @@
         <div class="px-[15px] py-[30px] relative flex flex-col items-center justify-center group">
             <img src="../assets/images/icons/direction-right-arrow.svg"
                 class="absolute left-[-10px] top-1/2 -translate-y-1/2 group-hover:left-0 duration-300" alt="">
-            <a href="#" class="icon icon-collapse flex items-center justify-center">
+            <a href="#modal-center" class="icon icon-collapse flex items-center justify-center" uk-toggle>
                 <img width="24px" src="../assets/images/icons/phone.svg" alt="">
             </a>
             <a href="#" class="icon icon-collapse flex items-center justify-center">
@@ -30,6 +32,24 @@
             <a href="#" class="icon icon-collapse flex items-center justify-center">
                 <img width="24px" src="../assets/images/icons/youtube.svg" alt="">
             </a>
+        </div>
+    </div>
+
+    <div id="modal-center" class="uk-flex-top " uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical rounded p-[80px]">
+
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="flex flex-col items-center w-full">
+                <h3 class="text-[#333333] text-[24px] font-[700]">Raqamingizni qoldiring!</h3>
+                <form>
+                    <input class="uk-input w-full rounded my-6 outline-[#51648E] uk-form-width-medium  h-[55px]"
+                        type="text" placeholder="Enter your name">
+                    <input class="uk-input w-full rounded my-6 outline-[#51648E] uk-form-width-medium h-[55px]"
+                        type="number" placeholder="+998 99 500 00 00">
+                    <button
+                        class="uk-button uk-button-default w-full bg-[#51648E] text-[#fff] rounded py-2 text-[22px]">OK</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -57,17 +77,22 @@
                                     </a>
                                 </li>
                                 <li class="animLeft">
-                                    <a href="" class="">
+                                    <a href="product.html" class="">
                                         Products
                                     </a>
                                 </li>
                                 <li class="animLeft">
-                                    <a href="" class="">
+                                    <a href="about.html" class="">
                                         About us
                                     </a>
                                 </li>
                                 <li class="animLeft">
-                                    <a href="" class="">
+                                    <a href="shopping.html" class="">
+                                        Shopping
+                                    </a>
+                                </li>
+                                <li class="animLeft">
+                                    <a href="brands.html" class="">
                                         Projects
                                     </a>
                                 </li>
@@ -126,7 +151,7 @@
                                             </svg></button>
                                     </div>
 
-                                    <ul class="mt-[50px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
+                                    <ul class="mt-[30px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
                                         uk-grid=""
                                         uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
                                         <li class="uk-flex uk-flex-right">
@@ -139,7 +164,8 @@
                                             <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
                                         </div>
                                         <li class="uk-flex uk-flex-right">
-                                            <a href="" class="font-500 animBottom" style="visibility: hidden;">
+                                            <a href="product.html" class="font-500 animBottom"
+                                                style="visibility: hidden;">
                                                 Products
                                             </a>
                                         </li>
@@ -147,7 +173,8 @@
                                             <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
                                         </div>
                                         <li class="uk-flex uk-flex-right">
-                                            <a href="" class="font-500 animBottom" style="visibility: hidden;">
+                                            <a href="about.html" class="font-500 animBottom"
+                                                style="visibility: hidden;">
                                                 About us
                                             </a>
                                         </li>
@@ -155,7 +182,17 @@
                                             <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
                                         </div>
                                         <li class="uk-flex uk-flex-right">
-                                            <a href="" class="font-500 animBottom" style="visibility: hidden;">
+                                            <a href="shopping.html" class="font-500 animBottom"
+                                                style="visibility: hidden;">
+                                                Shpping
+                                            </a>
+                                        </li>
+                                        <div>
+                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
+                                        </div>
+                                        <li class="uk-flex uk-flex-right">
+                                            <a href="brands.html" class="font-500 animBottom"
+                                                style="visibility: hidden;">
                                                 Projects
                                             </a>
                                         </li>
@@ -178,7 +215,7 @@
         </header>
     </div>
 
-    <main class="uk-section mt-[190px]">
+    <main class="uk-section mt-[100px]">
         <div class="uk-container">
             <div class="flex items-center justify-between">
                 <h2 class="title-2 main-color">Isover Products</h2>
@@ -194,16 +231,18 @@
                 <a href="#" class="text-[#181818] text-[12px]">Hashtags</a>
                 <div class="w-[1px] h-[10px] bg-[#181818] rotate-[12deg]"></div>
                 <a href="#" class="text-[#181818] text-[12px]">Liked</a>
-            </div>  
+            </div>
             <div>
-                <ul class="uk-child-width-1-3@m uk-child-width-1-2 uk-grid-medium uk-grid-match mt-[35px]" uk-grid>
+                <ul class="uk-child-width-1-3@m uk-child-width-1-2 uk-grid-small uk-grid-match mt-[35px]" uk-grid>
                     <li>
-                        <div class="bg-[#fff] rounded-[10px] flex flex-col items-center shadow-bottom p-[20px] sm:p-[30px]">
-                            <img class="w-full rounded-t-[10px]" src="../assets/images/product/product-1.png" alt="product">
+                        <div
+                            class="bg-[#fff] relative rounded-[10px] flex flex-col items-center shadow-bottom p-[10px] sm:p-[30px]">
+                            <img class="w-full rounded-t-[10px]" loading="lazy" src="../assets/images/product/product-1.png"
+                                alt="product">
                             <div class="text-[#fff] uk-margin-top">
                                 <h3 class="text-lg sm:text-[22px] text-[#030A1B] font-[600]">ISOVER Каркас-М34</h3>
-                                <p class="text-[#030A1B] text-[15px]">Here will go small description here</p>
-                                <div class="mt-[40px] flex justify-end">
+                                <p class="text-[#030A1B] text-[15px] pb-[70px]">Here will go small description here</p>
+                                <div class="mt-[40px] absolute right-[10px] sm:right-[30px] sm:bottom-[30px] bottom-[20px]">
                                     <a href="#" class="bg-[#51648E] glow-on-hover rounded-[8px] py-[8px] px-[35px]">
                                         Visit
                                     </a>
@@ -212,12 +251,14 @@
                         </div>
                     </li>
                     <li>
-                        <div class="bg-[#fff] rounded-[10px] flex flex-col items-center shadow-bottom p-[20px] sm:p-[30px]">
-                            <img class="w-full rounded-t-[10px]" src="../assets/images/product/product-1.png" alt="product">
+                        <div
+                            class="bg-[#fff] relative rounded-[10px] flex flex-col items-center shadow-bottom p-[10px] sm:p-[30px]">
+                            <img class="w-full rounded-t-[10px]" loading="lazy" src="../assets/images/product/product-2.png"
+                                alt="product">
                             <div class="text-[#fff] uk-margin-top">
                                 <h3 class="text-lg sm:text-[22px] text-[#030A1B] font-[600]">ISOVER Каркас-М34</h3>
-                                <p class="text-[#030A1B] text-[15px]">Here will go small description here</p>
-                                <div class="mt-[40px] flex justify-end">
+                                <p class="text-[#030A1B] text-[15px] pb-[70px]">Here will go small description here</p>
+                                <div class="mt-[40px] absolute right-[10px] sm:right-[30px] sm:bottom-[30px] bottom-[20px]">
                                     <a href="#" class="bg-[#51648E] glow-on-hover rounded-[8px] py-[8px] px-[35px]">
                                         Visit
                                     </a>
@@ -226,12 +267,14 @@
                         </div>
                     </li>
                     <li>
-                        <div class="bg-[#fff] rounded-[10px] flex flex-col items-center shadow-bottom p-[20px] sm:p-[30px]">
-                            <img class="w-full rounded-t-[10px]" src="../assets/images/product/product-1.png" alt="product">
+                        <div
+                            class="bg-[#fff] relative rounded-[10px] flex flex-col items-center shadow-bottom p-[10px] sm:p-[30px]">
+                            <img class="w-full rounded-t-[10px]" loading="lazy" src="../assets/images/product/product-3.png"
+                                alt="product">
                             <div class="text-[#fff] uk-margin-top">
                                 <h3 class="text-lg sm:text-[22px] text-[#030A1B] font-[600]">ISOVER Каркас-М34</h3>
-                                <p class="text-[#030A1B] text-[15px]">Here will go small description here</p>
-                                <div class="mt-[40px] flex justify-end">
+                                <p class="text-[#030A1B] text-[15px] pb-[70px]">Here will go small description here</p>
+                                <div class="mt-[40px] absolute right-[10px] sm:right-[30px] sm:bottom-[30px] bottom-[20px]">
                                     <a href="#" class="bg-[#51648E] glow-on-hover rounded-[8px] py-[8px] px-[35px]">
                                         Visit
                                     </a>
@@ -240,12 +283,14 @@
                         </div>
                     </li>
                     <li>
-                        <div class="bg-[#fff] rounded-[10px] flex flex-col items-center shadow-bottom p-[20px] sm:p-[30px]">
-                            <img class="w-full rounded-t-[10px]" src="../assets/images/product/product-1.png" alt="product">
+                        <div
+                            class="bg-[#fff] relative rounded-[10px] flex flex-col items-center shadow-bottom p-[10px] sm:p-[30px]">
+                            <img class="w-full rounded-t-[10px]" loading="lazy" src="../assets/images/product/product-4.png"
+                                alt="product">
                             <div class="text-[#fff] uk-margin-top">
                                 <h3 class="text-lg sm:text-[22px] text-[#030A1B] font-[600]">ISOVER Каркас-М34</h3>
-                                <p class="text-[#030A1B] text-[15px]">Here will go small description here</p>
-                                <div class="mt-[40px] flex justify-end">
+                                <p class="text-[#030A1B] text-[15px] pb-[70px]">Here will go small description here</p>
+                                <div class="mt-[40px] absolute right-[10px] sm:right-[30px] sm:bottom-[30px] bottom-[20px]">
                                     <a href="#" class="bg-[#51648E] glow-on-hover rounded-[8px] py-[8px] px-[35px]">
                                         Visit
                                     </a>
@@ -254,59 +299,99 @@
                         </div>
                     </li>
                     <li>
-                        <div class="bg-[#fff] rounded-[10px] flex flex-col items-center shadow-bottom p-[20px] sm:p-[30px]">
-                            <img class="w-full rounded-t-[10px]" src="../assets/images/product/product-1.png" alt="product">
+                        <div
+                            class="bg-[#fff] relative rounded-[10px] flex flex-col items-center shadow-bottom p-[10px] sm:p-[30px]">
+                            <img class="w-full rounded-t-[10px]" loading="lazy" src="../assets/images/product/product-5.png"
+                                alt="product">
                             <div class="text-[#fff] uk-margin-top">
                                 <h3 class="text-lg sm:text-[22px] text-[#030A1B] font-[600]">ISOVER Каркас-М34</h3>
-                                <p class="text-[#030A1B] text-[15px]">Here will go small description here</p>
-                                <div class="mt-[40px] flex justify-end">
+                                <p class="text-[#030A1B] text-[15px] pb-[70px]">Here will go small description here</p>
+                                <div class="mt-[40px] absolute right-[10px] sm:right-[30px] sm:bottom-[30px] bottom-[20px]">
                                     <a href="#" class="bg-[#51648E] glow-on-hover rounded-[8px] py-[8px] px-[35px]">
                                         Visit
                                     </a>
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li>   
+                    <li>
+                        <div
+                            class="bg-[#fff] relative rounded-[10px] flex flex-col items-center shadow-bottom p-[10px] sm:p-[30px]">
+                            <img class="w-full rounded-t-[10px]" loading="lazy" src="../assets/images/product/product-1.png"
+                                alt="product">
+                            <div class="text-[#fff] uk-margin-top">
+                                <h3 class="text-lg sm:text-[22px] text-[#030A1B] font-[600]">ISOVER Каркас-М34</h3>
+                                <p class="text-[#030A1B] text-[15px] pb-[70px]">Here will go small description here</p>
+                                <div class="mt-[40px] absolute right-[10px] sm:right-[30px] sm:bottom-[30px] bottom-[20px]">
+                                    <a href="#" class="bg-[#51648E] glow-on-hover rounded-[8px] py-[8px] px-[35px]">
+                                        Visit
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>   
                 </ul>
+                <div class="flex justify-center my-5">
+                    <ul class="uk-pagination font-[500] text-[20px]" uk-margin>
+                        <li><a href="#"><span uk-pagination-previous></span></a></li>
+                        <li><a href="#">1</a></li>
+                        <li class="uk-disabled"><span>...</span></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#"><span uk-pagination-next></span></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
- 
+
     <section class="uk-section uk-padding-remove-top mt-[-40px]">
         <div class="uk-container">
-            <div class="bg-[#51648E] rounded-[10px] flex flex-col items-center text-center py-[40px] sm:py-[70px] px-[22px] relative">
+            <div
+                class="bg-[#1E252B] rounded-[10px] flex flex-col items-center text-center py-[40px] sm:py-[70px] px-[22px] relative">
                 <h2 class="title-2 text-[#fff]">Leave your number to contact</h2>
-                <p class="text-[#fff] text-opacity-[0.7] mt-[10px] md:w-[600px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                <form class="uk-margin-large-top flex flex-col lg:flex-row space-y-[13px] lg:space-y-0 lg:space-x-[13px] w-full sm:w-[70%] lg:w-auto relative z-[4]">
+                <p class="text-[#fff] text-opacity-[0.7] mt-[10px] md:w-[600px]">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                <form
+                    class="uk-margin-large-top flex flex-col lg:flex-row space-y-[13px] lg:space-y-0 lg:space-x-[13px] w-full sm:w-[70%] lg:w-auto relative z-[4]">
                     <div class="form-input-anim">
-                        <input type="text" name="text" autocomplete="off" required class="w-full lg:w-[300px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] main-color">
+                        <input type="text" name="text" autocomplete="off" required
+                            class="w-full lg:w-[300px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] main-color">
                         <label for="text" class="label-name">
                             <span class="content-name">
                                 Enter your name
                             </span>
-                          </label>
+                        </label>
                     </div>
                     <div class="relative">
                         <div class="form-input-anim">
-                            <input type="text" name="text" autocomplete="off" required class="w-full lg:w-[465px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] main-color">
+                            <input type="text" name="text" autocomplete="off" required
+                                class="w-full lg:w-[465px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] main-color">
                             <label for="text" class="label-name">
                                 <span class="content-name">
                                     Enter your number
                                 </span>
-                              </label>
+                            </label>
                         </div>
-                        <div class="uk-visible@s main-background absolute right-[8px] top-1/2 -translate-y-1/2 rounded-[10px] font-medium">
+                        <div
+                            class="uk-visible@s main-background absolute right-[8px] top-1/2 -translate-y-1/2 rounded-[10px] font-medium">
                             <button class="submit third py-[14px] px-[50px]">Call me</button>
                         </div>
                     </div>
-                   <div class="inline-block">
-                    <div class="uk-hidden@s main-background rounded-[10px] font-medium">
-                        <button class="submit third py-[14px] px-[50px] w-full flex justify-center">Call me</button>
+                    <div class="inline-block">
+                        <div class="uk-hidden@s main-background rounded-[10px] font-medium">
+                            <button class="submit third py-[14px] px-[50px] w-full flex justify-center">Call me</button>
+                        </div>
                     </div>
-                   </div>
                 </form>
-                <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute left-0 top-[20px]" src="../assets/images/icons/pattern.svg" alt="pattern" style="animation-direction: alternate; animation-iteration-count: infinite; animation-fill-mode: forwards;">
-                <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute right-[20px] bottom-0" src="../assets/images/icons/pattern-2.svg" alt="pattern" style="animation-direction: alternate; animation-iteration-count: infinite; animation-fill-mode: forwards;">
+                <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute left-0 top-[20px]"
+                    src="../assets/images/icons/pattern.svg" alt="pattern"
+                    style="animation-direction: alternate; animation-iteration-count: infinite; animation-fill-mode: forwards;">
+                <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute right-[20px] bottom-0"
+                    src="../assets/images/icons/pattern-2.svg" alt="pattern"
+                    style="animation-direction: alternate; animation-iteration-count: infinite; animation-fill-mode: forwards;">
             </div>
         </div>
     </section>
@@ -319,22 +404,27 @@
                         <img class="w-[140px]" src="../assets/images/icons/logo.svg" alt="logo">
                     </a>
                     <p class="main-color-p sm:w-[300px] my-[25px]">
-                        Contrary to popular  is not simply random text. It has 
+                        Contrary to popular is not simply random text. It has
                     </p>
                     <div class="flex items-center">
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
+                        <a href="#"
+                            class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
                             <img width="8" src="../assets/images/icons/facebook.svg" alt="ico">
                         </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
+                        <a href="#"
+                            class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
                             <img src="../assets/images/icons/instagram.svg" alt="ico">
                         </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
+                        <a href="#"
+                            class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
                             <img src="../assets/images/icons/twitter.svg" alt="ico">
                         </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
+                        <a href="#"
+                            class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
                             <img src="../assets/images/icons/youtube.svg" alt="ico">
                         </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
+                        <a href="#"
+                            class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
                             <img src="../assets/images/icons/linkedin.svg" alt="ico">
                         </a>
                     </div>
@@ -347,21 +437,21 @@
                     <a href="#" class="main-color-p font-medium line-animation">Blogs</a>
                 </li>
                 <li class="flex flex-col space-y-[15px] text-[#030A1B]">
-                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">About</h3>
-                    <a href="#" class="main-color-p font-medium line-animation">Company</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Team</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Career</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Blogs</a>
+                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">Brands</h3>
+                    <a href="#" class="main-color-p font-medium line-animation">Isover</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Preasantation</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Management</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Dashboard</a>
                 </li>
                 <li class="flex flex-col space-y-[15px] text-[#030A1B]">
-                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">About</h3>
-                    <a href="#" class="main-color-p font-medium line-animation">Company</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Team</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Career</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Blogs</a>
+                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">Address</h3>
+                    <a href="#" class="main-color-p font-medium line-animation">Country Delevery</a>
+                    <a href="#" class="main-color-p font-medium line-animation">Counter Beach Post</a>
+                    <a href="#" class="main-color-p font-medium line-animation">www.itobd.com</a>
+                    <a href="#" class="main-color-p font-medium line-animation">+880176565655</a>
                 </li>
             </ul>
-        </div>  
+        </div>
     </footer>
 
     <script src="../assets/js/uikit-icons.min.js"></script>

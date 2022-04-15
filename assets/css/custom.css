@@ -33,31 +33,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .uk-offcanvas-flip .uk-open > .uk-offcanvas-bar {
-  background-color: #0C1D32;
-  width: 50%;
+  background-color: #030A1B;
+  width: 350px;
 }
 
-@media (max-width: 640px) {
-  .uk-offcanvas-flip .uk-open > .uk-offcanvas-bar {
-    width: 90%;
-  }
+.uk-offcanvas-flip .uk-open > .uk-offcanvas-bar .uk-link, .uk-offcanvas-flip .uk-open > .uk-offcanvas-bar a {
+  color: #fff !important;
+  text-transform: none !important;
+  font-size: 18px !important;
 }
 
 .navbar .uk-offcanvas-close {
   position: static;
-  padding: 0;
 }
 
 .navbar .uk-offcanvas-close svg {
   fill: #fff;
+  position: static;
 }
 
 .navbar .uk-offcanvas-close svg:nth-child(2) {
   display: none;
-}
-
-.navbar .uk-offcanvas-bar ul {
-  text-transform: unset !important;
 }
 
 .main-section .title {
@@ -79,6 +75,68 @@ h1, h2, h3, h4, h5, h6 {
   .main-section {
     padding-right: 22px;
     padding-left: 22px;
+  }
+  .uk-offcanvas-flip .uk-open > .uk-offcanvas-bar {
+    width: 95%;
+  }
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

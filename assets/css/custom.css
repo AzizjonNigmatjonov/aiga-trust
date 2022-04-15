@@ -15,6 +15,11 @@ a:hover {
   text-decoration: none;
 }
 
+.nav-link.active {
+  color: #030A1B !important;
+  border-bottom: 2px solid #030A1B;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif;
 }

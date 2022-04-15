@@ -800,16 +800,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .items-end {
@@ -892,30 +884,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(30px * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(30px * var(--tw-space-y-reverse));
-}
-
-.space-y-\[\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc( * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc( * var(--tw-space-y-reverse));
-}
-
-.space-y-\[40px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(40px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(40px * var(--tw-space-y-reverse));
-}
-
-.space-y-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0px * var(--tw-space-y-reverse));
-}
-
-.space-y-\[50px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(50px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(50px * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1447,16 +1415,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[600px\] {
     width: 600px;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
-  }
-
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 }
 

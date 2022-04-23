@@ -20,11 +20,3 @@
       background: #1E252B;
     }
 }
-
-.brand-card:hover{
-  cursor: pointer;
-  transition: .3s;
-  box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
-  background: linear-gradient(to top right ,#fff, #dfdfdf);
-  backdrop-filter: blur(50px);
-}

@@ -2,341 +2,328 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aiga Trust</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aiga Trust</title>
 
-    <link rel="stylesheet" href="../assets/css/uikit.min.css" />
-    <link rel="stylesheet" href="../assets/css/tailwind.css" />
-    <link rel="stylesheet" href="../assets/css/custom.css">
-    <link rel="icon" href="../assets/logo.svg">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
+  <link rel="stylesheet" href="../assets/css/uikit.min.css" />
+  <link rel="stylesheet" href="../assets/css/tailwind.css" />
+  <link rel="stylesheet" href="../assets/css/custom.css" />
+  <link rel="icon" href="../assets/logo.svg" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-
-    <div class="bg-[#51648E] fixed right-0 top-[490px] rounded-[5px] z-[3] uk-visible@m">
-        <div class="px-[15px] py-[30px] relative flex flex-col items-center justify-center group">
-            <img src="../assets/images/icons/direction-right-arrow.svg"
-                class="absolute left-[-10px] top-1/2 -translate-y-1/2 group-hover:left-0 duration-300" alt="">
-            <a href="#modal-center"  class="icon icon-collapse flex items-center justify-center" uk-toggle >
-                <img width="24px" src="../assets/images/icons/phone.svg" alt="">
-            </a>
-            <a href="#" class="icon icon-collapse flex items-center justify-center">
-                <img width="24px" src="../assets/images/icons/instagram.svg" alt="">
-            </a>
-            <a href="#" class="icon icon-collapse flex items-center justify-center">
-                <img width="24px" src="../assets/images/icons/youtube.svg" alt="">
-            </a>
-        </div>
+  <div class="bg-[#034ABE] fixed right-0 top-[490px] rounded-[5px] z-[3] uk-visible@m">
+    <div class="px-[15px] py-[30px] relative flex flex-col items-center justify-center group">
+      <img src="../assets/images/icons/direction-right-arrow.svg"
+        class="absolute left-[-10px] top-1/2 -translate-y-1/2 group-hover:left-0 duration-300" alt="" />
+      <a href="#modal-center" class="icon icon-collapse flex items-center justify-center" uk-toggle>
+        <img width="24px" src="../assets/images/icons/phone.svg" alt="" />
+      </a>
+      <a href="#" class="icon icon-collapse flex items-center justify-center">
+        <img width="24px" src="../assets/images/icons/instagram.svg" alt="" />
+      </a>
+      <a href="#" class="icon icon-collapse flex items-center justify-center">
+        <img width="24px" src="../assets/images/icons/youtube.svg" alt="" />
+      </a>
     </div>
+  </div>
 
-    <div id="modal-center" class="uk-flex-top " uk-modal>
-        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical rounded p-[80px]">
-    
-            <button class="uk-modal-close-default" type="button" uk-close></button>
-            <div class="flex flex-col items-center w-full">
-             <h3 class="text-[#333333] text-[24px] font-[700]">Raqamingizni qoldiring!</h3>
-             <form>
-                <input class="uk-input w-full rounded my-6 outline-[#51648E] uk-form-width-medium  h-[55px]" type="text" placeholder="Enter your name">
-                <input class="uk-input w-full rounded my-6 outline-[#51648E] uk-form-width-medium h-[55px]" type="number" placeholder="+998 99 500 00 00">
-                <button class="uk-button uk-button-default w-full bg-[#51648E] text-[#fff] rounded py-2 text-[22px]">OK</button>
-            </form>       
-            </div>
-        </div>
-    </div>
+  <div id="header"
+    uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#034ABE] border-opacity-[0.22]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
+    class="navbar uk-sticky">
+    <header class="header absolute top-0 left-0 w-full uk-navbar-transparent z-[9]"
+      uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left; delay: 100; repeat: true">
+      <div class="uk-container">
+        <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px]">
+          <div class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]">
+            <a href="index.html">
+              <img class="uk-animation-fade w-[100px] sm:w-auto" src="../assets/images/icons/logo.svg" alt="Logo" />
+            </a>
+          </div>
 
-    <div id="header"
-        uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#51648E] border-opacity-[0.22]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
-        class="navbar uk-sticky">
-        <header class="header absolute top-0 left-0 w-full uk-navbar-transparent z-[9]"
-            uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left; delay: 100; repeat: true">
-
-            <div class="uk-container">
-                <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px]">
-                    <div class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]">
-                        <a href="index.html">
-                            <img class="uk-animation-fade w-[100px] sm:w-auto" src="../assets/images/icons/logo.svg"
-                                alt="Logo">
-                        </a>
+          <div class="uk-navbar-right">
+            <div class="uk-visible@l uk-margin-remove-top flex items-center space-x-[28px]">
+              <ul class="uk-flex-middle uk-grid list" uk-grid>
+                <li class="animLeft">
+                  <a href="index.html" class="nav-link"> Home </a>
+                </li>
+                <li class="animLeft">
+                  <a href="product.html" class="nav-link"> Products </a>
+                </li>
+                <li class="animLeft">
+                  <a href="about.html" class="nav-link"> About us </a>
+                </li>
+                <li class="animLeft">
+                  <a href="brands.html" class="nav-link"> Projects </a>
+                </li>
+              </ul>
+              <div class="inline-block text-[#fff]"
+                uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true">
+                <a href="tel:+998955555555"
+                  class="bg-[#034ABE] rounded-[5px] py-[10px] px-[30px] animBtnTop text-[#fff]">
+                  <div class="flex items-center relative z-[3] space-x-[14px]">
+                    <img src="../assets/images/icons/phone.svg" alt="phone" />
+                    <div class="flex flex-col">
+                      <span class="font-[700]">+998 95 555 55 55 </span>
+                      <span class="text-sm">Bepul konsultatsiya </span>
                     </div>
-
-                    <div class="uk-navbar-right">
-                        <div class="uk-visible@l uk-margin-remove-top flex items-center space-x-[28px]">
-                            <ul class="uk-flex-middle uk-grid list" uk-grid>
-                                <li class="animLeft">
-                                    <a href="index.html" class="nav-link">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="animLeft">
-                                    <a href="product.html" class="nav-link">
-                                        Products
-                                    </a>
-                                </li>
-                                <li class="animLeft">
-                                    <a href="about.html" class="nav-link">
-                                        About us
-                                    </a>
-                                </li>
-                                <li class="animLeft">
-                                    <a href="shopping.html" class="nav-link">
-                                        Shopping
-                                    </a>
-                                </li>
-                                <li class="animLeft">
-                                    <a href="brands.html" class="nav-link">
-                                        Projects
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="inline-block text-[#fff]"
-                                uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true">
-                                <a href="tel:+998955555555"
-                                    class="bg-[#51648E] rounded-[5px] py-[10px] px-[30px] animBtnTop text-[#fff]">
-                                    <div class="flex items-center relative z-[3] space-x-[14px]">
-                                        <img src="../assets/images/icons/phone.svg" alt="phone">
-                                        <div class="flex flex-col">
-                                            <span class="font-[700]">+998 95 555 55 55
-                                            </span>
-                                            <span class="text-sm">Bepul konsultatsiya </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="uk-hidden@l">
-                            <div class="text-[#1d1d1b]">
-                                <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip"
-                                    class="text-[#1d1d1b] hover-link" aria-expanded="false">
-                                    <ul class="uk-flex uk-flex-column space-y-[3px] items-end">
-                                        <li>
-                                            <hr class="border-none w-[30px] h-[3px] bg-[#030A1B] rounded-[6px]">
-                                        </li>
-                                        <li>
-                                            <hr class="border-none w-[28px] h-[3px] bg-[#030A1B] rounded-[6px]">
-                                        </li>
-                                        <li>
-                                            <hr class="border-none w-[24px] h-[3px] bg-[#030A1B] rounded-[6px]">
-                                        </li>
-                                    </ul>
-                                </a>
-                            </div>
-
-                            <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas">
-                                <div class="uk-offcanvas-bar mobile-navbar">
-                                    <div class="flex justify-end">
-                                        <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close="">
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
-                                                height="24">
-                                                <path fill="none" d="M0 0h24v24H0z"></path>
-                                                <path
-                                                    d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
-                                                </path>
-                                            </svg>
-                                            <svg width="14" height="14" viewBox="0 0 14 14"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13"
-                                                    y2="13"></line>
-                                                <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1"
-                                                    y2="13"></line>
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <ul class="mt-[30px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
-                                        uk-grid=""
-                                        uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
-                                        <li class="uk-flex uk-flex-right">
-                                            <a href="index.html" class="font-500 animBottom"
-                                                style="visibility: hidden;">
-                                                Home
-                                            </a>
-                                        </li>
-                                        <div>
-                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                                        </div>
-                                        <li class="uk-flex uk-flex-right">
-                                            <a href="product.html" class="font-500 animBottom" style="visibility: hidden;">
-                                                Products
-                                            </a>
-                                        </li>
-                                        <div>
-                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                                        </div>
-                                        <li class="uk-flex uk-flex-right">
-                                            <a href="about.html" class="font-500 animBottom" style="visibility: hidden;">
-                                                About us
-                                            </a>
-                                        </li>
-                                        <div>
-                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                                        </div>
-                                        <li class="uk-flex uk-flex-right">
-                                            <a href="shopping.html" class="font-500 animBottom" style="visibility: hidden;">
-                                                Shopping
-                                            </a>
-                                        </li>
-                                        <div>
-                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                                        </div>
-                                        <li class="uk-flex uk-flex-right">
-                                            <a href="brands.html" class="font-500 animBottom" style="visibility: hidden;">
-                                                Projects
-                                            </a>
-                                        </li>
-                                        <div>
-                                            <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]">
-                                        </div>
-                                        <li class="uk-flex uk-flex-right">
-                                            <a href="tel:+998955555555" class="font-500 animBottom"
-                                                style="visibility: hidden;">
-                                                +998 95 555 55 55
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-    </div>
-
-    <main class="uk-section mt-[100px]">
-        <div class="uk-container">
-            <div class="flex items-center justify-between">
-                <h2 class="title-2 main-color">About Us</h2>
-            </div>
-            <div class="text-[#181818] inline-flex items-center space-x-[8px] bg-[#E9F0F8] py-[5px] px-[12px] mt-[8px]">
-                <a href="#" class="text-[#181818] text-[12px]">Home</a>
-                <div class="w-[1px] h-[10px] bg-[#181818] rotate-[12deg]"></div>
-                <a href="#" class="text-[#181818] text-[12px]">About our company</a>
-            </div>  
-            <div >
-               <img class="my-[25px]" loading="lazy" data-aos="zoom-in" src="../assets/images/about/about-image.png" width="100%" alt="image">
-            </div>
-            <div class="my-5">
-                <p class="font-[500] text-[14px] sm:text-[18px] text-[#6B7280]">
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                </p>
-            </div>
-            <div class="flex space-x-[22px] items-center">
-                <div class="text-[#fff]">
-                    <a href="#" class="bg-[#51648E] glow-on-hover rounded-[8px] py-[8px] px-[35px]">
-                        Visit
-                    </a>
-                </div>
-                <a href="#" class="rounded bg-[#fff] border-0 p-[10px] text-[#67789C] hover:font-bold duration-300">
-                    Our Social Media
+                  </div>
                 </a>
+              </div>
             </div>
-        </div>
-    </main>
- 
-    <section class="uk-section uk-padding-remove-top mt-[40px]">
-        <div class="uk-container">
-            <div class="bg-[#1E252B] rounded-[10px] flex flex-col items-center text-center py-[40px] sm:py-[70px] px-[22px] relative">
-                <h2 class="title-2 text-[#fff]">Leave your number to contact</h2>
-                <p class="text-[#fff] text-opacity-[0.7] mt-[10px] md:w-[600px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                <form class="uk-margin-large-top flex flex-col lg:flex-row space-y-[13px] lg:space-y-0 lg:space-x-[13px] w-full sm:w-[70%] lg:w-auto relative z-[4]">
-                    <div class="form-input-anim">
-                        <input type="text" name="text" autocomplete="off" required class="w-full lg:w-[300px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] main-color">
-                        <label for="text" class="label-name">
-                            <span class="content-name">
-                                Enter your name
-                            </span>
-                          </label>
+
+            <div class="uk-hidden@l">
+              <div class="text-[#1d1d1b]">
+                <a href="javascript:void(0);" uk-toggle="target: #offcanvas-flip" class="text-[#1d1d1b] hover-link"
+                  aria-expanded="false">
+                  <ul class="uk-flex uk-flex-column space-y-[3px] items-end">
+                    <li>
+                      <hr class="border-none w-[30px] h-[3px] bg-[#030A1B] rounded-[6px]" />
+                    </li>
+                    <li>
+                      <hr class="border-none w-[28px] h-[3px] bg-[#030A1B] rounded-[6px]" />
+                    </li>
+                    <li>
+                      <hr class="border-none w-[24px] h-[3px] bg-[#030A1B] rounded-[6px]" />
+                    </li>
+                  </ul>
+                </a>
+              </div>
+
+              <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true" class="uk-offcanvas">
+                <div class="uk-offcanvas-bar mobile-navbar">
+                  <div class="flex justify-end">
+                    <button class="uk-offcanvas-close uk-icon uk-close" type="button" uk-close="">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z">
+                        </path>
+                      </svg>
+                      <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="1" y1="1" x2="13" y2="13"></line>
+                        <line fill="none" stroke="#000" stroke-width="1.1" x1="13" y1="1" x2="1" y2="13"></line>
+                      </svg>
+                    </button>
+                  </div>
+
+                  <ul
+                    class="mt-[30px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
+                    uk-grid=""
+                    uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true">
+                    <li class="uk-flex uk-flex-right">
+                      <a href="index.html" class="font-500 animBottom" style="visibility: hidden">
+                        Home
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]" />
                     </div>
-                    <div class="relative">
-                        <div class="form-input-anim">
-                            <input type="text" name="text" autocomplete="off" required class="w-full lg:w-[465px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] main-color">
-                            <label for="text" class="label-name">
-                                <span class="content-name">
-                                    Enter your number
-                                </span>
-                              </label>
-                        </div>
-                        <div class="uk-visible@s main-background absolute right-[8px] top-1/2 -translate-y-1/2 rounded-[10px] font-medium">
-                            <button class="submit third py-[14px] px-[50px]">Call me</button>
-                        </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a href="product.html" class="font-500 animBottom" style="visibility: hidden">
+                        Products
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]" />
                     </div>
-                   <div class="inline-block">
-                    <div class="uk-hidden@s main-background rounded-[10px] font-medium">
-                        <button class="submit third py-[14px] px-[50px] w-full flex justify-center">Call me</button>
+                    <li class="uk-flex uk-flex-right">
+                      <a href="about.html" class="font-500 animBottom" style="visibility: hidden">
+                        About us
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]" />
                     </div>
-                   </div>
-                </form>
-                <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute left-0 top-[20px]" src="../assets/images/icons/pattern.svg" alt="pattern" style="animation-direction: alternate; animation-iteration-count: infinite; animation-fill-mode: forwards;">
-                <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute right-[20px] bottom-0" src="../assets/images/icons/pattern-2.svg" alt="pattern" style="animation-direction: alternate; animation-iteration-count: infinite; animation-fill-mode: forwards;">
+                    <li class="uk-flex uk-flex-right">
+                      <a href="brands.html" class="font-500 animBottom" style="visibility: hidden">
+                        Projects
+                      </a>
+                    </li>
+                    <div>
+                      <hr class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]" />
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a href="tel:+998955555555" class="font-500 animBottom" style="visibility: hidden">
+                        +998 95 555 55 55
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+
+
+  <main class="uk-section mt-[100px] mb-[60px]">
+    <div class="uk-container">
+      <div class="flex items-center justify-between">
+        <h2 class="title-2 main-color">About Us</h2>
+      </div>
+      <div class="text-[#181818] inline-flex items-center space-x-[8px] bg-[#E9F0F8] py-[5px] px-[12px] mt-[8px]">
+        <a href="#" class="text-[#181818] text-[12px]">Home</a>
+        <div class="w-[1px] h-[10px] bg-[#181818] rotate-[12deg]"></div>
+        <a href="#" class="text-[#181818] text-[12px]">About our company</a>
+      </div>
+      <div>
+        <div class="my-[25px] uk-height-large uk-background-cover uk-light uk-flex" loading="lazy" data-aos="zoom-in"
+          uk-parallax="bgy: -200" style="background-image: url('../assets/images/about/about-image.png');">
         </div>
-    </section>
+        <div class="my-5">
+          <p class="font-[500] text-[14px] sm:text-[18px] text-[#6B7280]">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. There are many variations of passages of Lorem Ipsum
+            available, but the majority have suffered alteration in some form,
+            by injected humour, or randomised words which don't look even
+            slightly believable. There are many variations of passages of Lorem
+            Ipsum available, but the majority have suffered alteration in some
+            form, by injected humour, or randomised words which don't look even
+            slightly believable.
+          </p>
+        </div>
+        <div class="flex space-x-[22px] items-center">
+          <div class="text-[#fff]">
+            <a href="#" class="bg-[#034ABE] glow-on-hover rounded-[5px] py-[8px] px-[20px]">
+              More about us
+            </a>
+          </div>
+          <a href="#" class="rounded bg-[#fff] border-0 p-[10px] text-[#67789C] hover:font-bold duration-300">
+            Our Social Media
+          </a>
+        </div>
+      </div>
+  </main>
 
-    <footer class="uk-section">
-        <div class="uk-container">
-            <ul class="p-0 sm:justify-between uk-grid-large" uk-grid>
-                <li class="sm:w-[360px]">
-                    <a href="index.html" class="inline-block">
-                        <img class="w-[140px]" src="../assets/images/icons/logo.svg" alt="logo">
-                    </a>
-                    <p class="main-color-p sm:w-[300px] my-[25px]">
-                        Contrary to popular  is not simply random text. It has 
-                    </p>
-                    <div class="flex items-center">
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
-                            <img width="8" src="../assets/images/icons/facebook.svg" alt="ico">
-                        </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
-                            <img src="../assets/images/icons/instagram.svg" alt="ico">
-                        </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
-                            <img src="../assets/images/icons/twitter.svg" alt="ico">
-                        </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
-                            <img src="../assets/images/icons/youtube.svg" alt="ico">
-                        </a>
-                        <a href="#" class="icon icon-collapse flex items-center justify-center bg-[#51648E] w-[40px] h-[40px] rounded-full">
-                            <img src="../assets/images/icons/linkedin.svg" alt="ico">
-                        </a>
-                    </div>
-                </li>
-                <li class="flex flex-col space-y-[15px] text-[#030A1B] w-[50%] sm:w-auto">
-                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">About</h3>
-                    <a href="#" class="main-color-p font-medium line-animation">Company</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Team</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Career</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Blogs</a>
-                </li>
-                <li class="flex flex-col space-y-[15px] text-[#030A1B]">
-                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">Brands</h3>
-                    <a href="#" class="main-color-p font-medium line-animation">Isover</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Preasantation</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Management</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Dashboard</a>
-                </li>
-                <li class="flex flex-col space-y-[15px] text-[#030A1B]">
-                    <h3 class="main-color font-[600] text-[22px] pb-[10px]">Address</h3>
-                    <a href="#" class="main-color-p font-medium line-animation">Country Delevery</a>
-                    <a href="#" class="main-color-p font-medium line-animation">Counter Beach Post</a>
-                    <a href="#" class="main-color-p font-medium line-animation">www.itobd.com</a>
-                    <a href="#" class="main-color-p font-medium line-animation">+880176565655</a>
-                </li>
-            </ul>
-        </div>  
-    </footer>
+  <section class="uk-section uk-padding-remove-top mt-[-40px]">
+    <div class="uk-container">
+      <div
+        class="bg-[#1E252B] rounded-[10px] flex flex-col items-center text-center py-[40px] sm:py-[70px] px-[22px] relative">
+        <h2 class="title-2 text-[#fff]">Leave your number to contact</h2>
+        <p class="text-[#fff] text-opacity-[0.7] mt-[10px] md:w-[600px]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text.
+        </p>
+        <form
+          class="uk-margin-large-top flex flex-col lg:flex-row space-y-[13px] lg:space-y-0 lg:space-x-[13px] w-full sm:w-[70%] lg:w-auto relative z-[4]">
+          <div class="form-input-anim">
+            <input type="text" name="text" autocomplete="off" required
+              class="w-full lg:w-[300px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] text-white bg-[#242C32]" />
+            <label for="text" class="label-name">
+              <span class="content-name"> Enter your name </span>
+            </label>
+          </div>
+          <div class="relative">
+            <div class="form-input-anim">
+              <input type="text" name="text" autocomplete="off" required
+                class="w-full lg:w-[465px] py-[20px] px-[30px] rounded-[10px] focus:outline-none placeholder:text-[#535050] placeholder:text-opacity-[0.5] text-white bg-[#242C32]" />
+              <label for="text" class="label-name">
+                <span class="content-name"> Enter your number </span>
+              </label>
+            </div>
+            <div
+              class="uk-visible@s main-background absolute right-[8px] top-1/2 -translate-y-1/2 rounded-[10px] font-medium">
+              <button class="submit third py-[14px] px-[50px]">
+                Call me
+              </button>
+            </div>
+          </div>
+          <div class="inline-block">
+            <div class="uk-hidden@s main-background rounded-[10px] font-medium">
+              <button class="submit third py-[14px] px-[50px] w-full flex justify-center">
+                Call me
+              </button>
+            </div>
+          </div>
+        </form>
+        <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute left-0 top-[20px]"
+          src="../assets/images/icons/pattern.svg" alt="pattern" style="
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+          " />
+        <img uk-scrollspy="cls: uk-animation-kenburns; repeat: true" class="absolute right-[20px] bottom-0"
+          src="../assets/images/icons/pattern-2.svg" alt="pattern" style="
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+          " />
+      </div>
+    </div>
+  </section>
 
-    <script src="../assets/js/uikit-icons.min.js"></script>
-    <script src="../assets/js/uikit.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../assets/js/custom.js"></script>
+  <footer class="uk-section">
+    <div class="uk-container">
+      <ul class="p-0 sm:justify-between uk-grid-large" uk-grid>
+        <li class="sm:w-[360px]">
+          <a href="index.html" class="inline-block">
+            <img class="w-[140px]" src="../assets/images/icons/logo.svg" alt="logo" />
+          </a>
+          <p class="main-color-p sm:w-[300px] my-[25px]">
+            Contrary to popular is not simply random text. It has
+          </p>
+          <div class="flex items-center">
+            <a href="#"
+              class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full">
+              <img width="8" src="../assets/images/icons/facebook.svg" alt="ico" />
+            </a>
+            <a href="#"
+              class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full">
+              <img src="../assets/images/icons/instagram.svg" alt="ico" />
+            </a>
+            <a href="#"
+              class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full">
+              <img src="../assets/images/icons/twitter.svg" alt="ico" />
+            </a>
+            <a href="#"
+              class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full">
+              <img src="../assets/images/icons/youtube.svg" alt="ico" />
+            </a>
+            <a href="#"
+              class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full">
+              <img src="../assets/images/icons/linkedin.svg" alt="ico" />
+            </a>
+          </div>
+        </li>
+        <li class="flex flex-col space-y-[15px] text-[#030A1B] w-[50%] sm:w-auto">
+          <h3 class="main-color font-[600] text-[22px] pb-[10px]">Website</h3>
+          <a href="index.html" class="main-color-p font-medium line-animation">Home</a>
+          <a href="product.html" class="main-color-p font-medium line-animation">Products</a>
+          <a href="about.html" class="main-color-p font-medium line-animation">About</a>
+          <a href="brands.html" class="main-color-p font-medium line-animation">Projects</a>
+        </li>
+        <li class="flex flex-col space-y-[15px] text-[#030A1B]">
+          <h3 class="main-color font-[600] text-[22px] pb-[10px]">Brands</h3>
+          <a href="product.html" class="main-color-p font-medium line-animation">Isover</a>
+          <a href="product.html" class="main-color-p font-medium line-animation">Preasantation</a>
+          <a href="product.html" class="main-color-p font-medium line-animation">Management</a>
+          <a href="product.html" class="main-color-p font-medium line-animation">Dashboard</a>
+        </li>
+        <li class="flex flex-col space-y-[15px] text-[#030A1B]">
+          <h3 class="main-color font-[600] text-[22px] pb-[10px]">Address</h3>
+          <a href="#" class="main-color-p font-medium line-animation">Country Delevery</a>
+          <a href="#" class="main-color-p font-medium line-animation">Counter Beach Post</a>
+          <a href="#" class="main-color-p font-medium line-animation">www.itobd.com</a>
+          <a href="#" class="main-color-p font-medium line-animation">+880176565655</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
+  <script src="../assets/js/uikit-icons.min.js"></script>
+  <script src="../assets/js/uikit.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../assets/js/custom.js"></script>
 </body>
 
 </html>

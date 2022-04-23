@@ -42,231 +42,230 @@
     </div>
 
     <div
-      id="header"
-      uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#034ABE] border-opacity-[0.22]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
-      class="navbar uk-sticky"
+    id="header"
+    uk-sticky="show-on-up: true; animation: uk-animation-slide-top; sel-target: .header; cls-active: uk-navbar-sticky bg-[#fff] border-b-2 border-[#034ABE] border-opacity-[0.22]; cls-inactive: uk-navbar-transparent z-[9]; top: 200;"
+    class="navbar uk-sticky"
+  >
+    <header
+      class="header absolute top-0 left-0 w-full uk-navbar-transparent z-[9]"
+      uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left; delay: 100; repeat: true"
     >
-      <header
-        class="header absolute top-0 left-0 w-full uk-navbar-transparent z-[9]"
-        uk-scrollspy="target: .animLeft; cls: uk-animation-slide-left; delay: 100; repeat: true"
-      >
-        <div class="uk-container">
-          <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px]">
+      <div class="uk-container">
+        <nav class="uk-flex uk-flex-between uk-flex-middle py-[30px]">
+          <div
+            class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]"
+          >
+            <a href="index.html">
+              <img
+                class="uk-animation-fade w-[100px] sm:w-auto"
+                src="../assets/images/icons/logo.svg"
+                alt="Logo"
+              />
+            </a>
+          </div>
+
+          <div class="uk-navbar-right">
             <div
-              class="uk-navbar-left uk-padding-remove-left flex items-center space-x-[170px]"
+              class="uk-visible@l uk-margin-remove-top flex items-center space-x-[28px]"
             >
-              <a href="index.html">
-                <img
-                  class="uk-animation-fade w-[100px] sm:w-auto"
-                  src="../assets/images/icons/logo.svg"
-                  alt="Logo"
-                />
-              </a>
-            </div>
-
-            <div class="uk-navbar-right">
+              <ul class="uk-flex-middle uk-grid list" uk-grid>
+                <li class="animLeft">
+                  <a href="index.html" class="nav-link"> Home </a>
+                </li>
+                <li class="animLeft">
+                  <a href="brands.html" class="nav-link"> Products </a>
+                </li>
+                <li class="animLeft">
+                  <a href="about.html" class="nav-link"> About us </a>
+                </li>
+                <li class="animLeft">
+                  <a href="./index.html#clients" class="nav-link"> Projects </a>
+                </li>
+              </ul>
               <div
-                class="uk-visible@l uk-margin-remove-top flex items-center space-x-[28px]"
+                class="inline-block text-[#fff]"
+                uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true"
               >
-                <ul class="uk-flex-middle uk-grid list" uk-grid>
-                  <li class="animLeft">
-                    <a href="index.html" class="nav-link"> Home </a>
-                  </li>
-                  <li class="animLeft">
-                    <a href="product.html" class="nav-link"> Products </a>
-                  </li>
-                  <li class="animLeft">
-                    <a href="about.html" class="nav-link"> About us </a>
-                  </li>
-                  <li class="animLeft">
-                    <a href="brands.html" class="nav-link"> Projects </a>
-                  </li>
-                </ul>
-                <div
-                  class="inline-block text-[#fff]"
-                  uk-scrollspy="cls: uk-animation-slide-right; delay: 100; repeat: true"
+                <a
+                  href="tel:+998955555555"
+                  class="bg-[#034ABE] rounded-[5px] py-[10px] px-[30px] animBtnTop text-[#fff]"
                 >
-                  <a
-                    href="tel:+998955555555"
-                    class="bg-[#034ABE] rounded-[5px] py-[10px] px-[30px] animBtnTop text-[#fff]"
+                  <div
+                    class="flex items-center relative z-[3] space-x-[14px]"
                   >
-                    <div
-                      class="flex items-center relative z-[3] space-x-[14px]"
-                    >
-                      <img src="../assets/images/icons/phone.svg" alt="phone" />
-                      <div class="flex flex-col">
-                        <span class="font-[700]">+998 95 555 55 55 </span>
-                        <span class="text-sm">Bepul konsultatsiya </span>
-                      </div>
+                    <img src="../assets/images/icons/phone.svg" alt="phone" />
+                    <div class="flex flex-col">
+                      <span class="font-[700]">+998 95 555 55 55 </span>
+                      <span class="text-sm">Bepul konsultatsiya </span>
                     </div>
-                  </a>
-                </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="uk-hidden@l">
+              <div class="text-[#1d1d1b]">
+                <a
+                  href="javascript:void(0);"
+                  uk-toggle="target: #offcanvas-flip"
+                  class="text-[#1d1d1b] hover-link"
+                  aria-expanded="false"
+                >
+                  <ul class="uk-flex uk-flex-column space-y-[3px] items-end">
+                    <li>
+                      <hr
+                        class="border-none w-[30px] h-[3px] bg-[#030A1B] rounded-[6px]"
+                      />
+                    </li>
+                    <li>
+                      <hr
+                        class="border-none w-[28px] h-[3px] bg-[#030A1B] rounded-[6px]"
+                      />
+                    </li>
+                    <li>
+                      <hr
+                        class="border-none w-[24px] h-[3px] bg-[#030A1B] rounded-[6px]"
+                      />
+                    </li>
+                  </ul>
+                </a>
               </div>
 
-              <div class="uk-hidden@l">
-                <div class="text-[#1d1d1b]">
-                  <a
-                    href="javascript:void(0);"
-                    uk-toggle="target: #offcanvas-flip"
-                    class="text-[#1d1d1b] hover-link"
-                    aria-expanded="false"
-                  >
-                    <ul class="uk-flex uk-flex-column space-y-[3px] items-end">
-                      <li>
-                        <hr
-                          class="border-none w-[30px] h-[3px] bg-[#030A1B] rounded-[6px]"
-                        />
-                      </li>
-                      <li>
-                        <hr
-                          class="border-none w-[28px] h-[3px] bg-[#030A1B] rounded-[6px]"
-                        />
-                      </li>
-                      <li>
-                        <hr
-                          class="border-none w-[24px] h-[3px] bg-[#030A1B] rounded-[6px]"
-                        />
-                      </li>
-                    </ul>
-                  </a>
-                </div>
-
-                <div
-                  id="offcanvas-flip"
-                  uk-offcanvas="flip: true; overlay: true"
-                  class="uk-offcanvas"
-                >
-                  <div class="uk-offcanvas-bar mobile-navbar">
-                    <div class="flex justify-end">
-                      <button
-                        class="uk-offcanvas-close uk-icon uk-close"
-                        type="button"
-                        uk-close=""
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          width="24"
-                          height="24"
-                        >
-                          <path fill="none" d="M0 0h24v24H0z"></path>
-                          <path
-                            d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
-                          ></path>
-                        </svg>
-                        <svg
-                          width="14"
-                          height="14"
-                          viewBox="0 0 14 14"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            fill="none"
-                            stroke="#000"
-                            stroke-width="1.1"
-                            x1="1"
-                            y1="1"
-                            x2="13"
-                            y2="13"
-                          ></line>
-                          <line
-                            fill="none"
-                            stroke="#000"
-                            stroke-width="1.1"
-                            x1="13"
-                            y1="1"
-                            x2="1"
-                            y2="13"
-                          ></line>
-                        </svg>
-                      </button>
-                    </div>
-
-                    <ul
-                      class="mt-[30px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
-                      uk-grid=""
-                      uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true"
+              <div
+                id="offcanvas-flip"
+                uk-offcanvas="flip: true; overlay: true"
+                class="uk-offcanvas"
+              >
+                <div class="uk-offcanvas-bar mobile-navbar">
+                  <div class="flex justify-end">
+                    <button
+                      class="uk-offcanvas-close uk-icon uk-close"
+                      type="button"
+                      uk-close=""
                     >
-                      <li class="uk-flex uk-flex-right">
-                        <a
-                          href="index.html"
-                          class="font-500 animBottom"
-                          style="visibility: hidden"
-                        >
-                          Home
-                        </a>
-                      </li>
-                      <div>
-                        <hr
-                          class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
-                        />
-                      </div>
-                      <li class="uk-flex uk-flex-right">
-                        <a
-                          href="product.html"
-                          class="font-500 animBottom"
-                          style="visibility: hidden"
-                        >
-                          Products
-                        </a>
-                      </li>
-                      <div>
-                        <hr
-                          class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
-                        />
-                      </div>
-                      <li class="uk-flex uk-flex-right">
-                        <a
-                          href="about.html"
-                          class="font-500 animBottom"
-                          style="visibility: hidden"
-                        >
-                          About us
-                        </a>
-                      </li>
-                      <div>
-                        <hr
-                          class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
-                        />
-                      </div>
-                      <li class="uk-flex uk-flex-right">
-                        <a
-                          href="brands.html"
-                          class="font-500 animBottom"
-                          style="visibility: hidden"
-                        >
-                          Projects
-                        </a>
-                      </li>
-                      <div>
-                        <hr
-                          class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
-                        />
-                      </div>
-                      <li class="uk-flex uk-flex-right">
-                        <a
-                          href="tel:+998955555555"
-                          class="font-500 animBottom"
-                          style="visibility: hidden"
-                        >
-                          +998 95 555 55 55
-                        </a>
-                      </li>
-                    </ul>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <path fill="none" d="M0 0h24v24H0z"></path>
+                        <path
+                          d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"
+                        ></path>
+                      </svg>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="1.1"
+                          x1="1"
+                          y1="1"
+                          x2="13"
+                          y2="13"
+                        ></line>
+                        <line
+                          fill="none"
+                          stroke="#000"
+                          stroke-width="1.1"
+                          x1="13"
+                          y1="1"
+                          x2="1"
+                          y2="13"
+                        ></line>
+                      </svg>
+                    </button>
                   </div>
+
+                  <ul
+                    class="mt-[30px] items-end uk-flex-column uk-grid-small uk-text-uppercase uk-child-width-1-1 uk-grid uk-grid-stack"
+                    uk-grid=""
+                    uk-scrollspy="target: .animBottom; cls: uk-animation-slide-top-small; delay: 100; repeat: true"
+                  >
+                    <li class="uk-flex uk-flex-right">
+                      <a
+                        href="index.html"
+                        class="font-500 animBottom"
+                        style="visibility: hidden"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <div>
+                      <hr
+                        class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
+                      />
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a
+                        href="brands.html"
+                        class="font-500 animBottom"
+                        style="visibility: hidden"
+                      >
+                        Products
+                      </a>
+                    </li>
+                    <div>
+                      <hr
+                        class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
+                      />
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a
+                        href="about.html"
+                        class="font-500 animBottom"
+                        style="visibility: hidden"
+                      >
+                        About
+                      </a>
+                    </li>
+                    <div>
+                      <hr
+                        class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
+                      />
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a
+                        href="./index.html#clients"
+                        class="font-500 animBottom"
+                        style="visibility: hidden"
+                      >
+                        Projects
+                      </a>
+                    </li>
+                    <div>
+                      <hr
+                        class="border-none w-full h-[1px] bg-[#fff] bg-opacity-[0.06]"
+                      />
+                    </div>
+                    <li class="uk-flex uk-flex-right">
+                      <a
+                        href="tel:+998955555555"
+                        class="font-500 animBottom"
+                        style="visibility: hidden"
+                      >
+                        +998 95 555 55 55
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </nav>
-        </div>
-      </header>
-    </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
 
     <main class="uk-section mt-[100px]">
       <div class="uk-container">
         <div class="flex items-center justify-between">
           <h2 class="title-2 main-color">Isover Products</h2>
-          <a href="#" class="text-[#034ABE] font-[600]">VIEW ALL</a>
         </div>
         <div
           class="text-[#181818] inline-flex items-center space-x-[8px] bg-[#E9F0F8] py-[5px] px-[12px] mt-[8px]"
@@ -467,27 +466,11 @@
               </div>
             </li>
           </ul>
-          <div class="flex justify-center my-5">
-            <ul class="uk-pagination font-[500] text-[20px]" uk-margin>
-              <li>
-                <a href="#"><span uk-pagination-previous></span></a>
-              </li>
-              <li><a href="#">1</a></li>
-              <li class="uk-disabled"><span>...</span></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">6</a></li>
-              <li>
-                <a href="#"><span uk-pagination-next></span></a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </main>
 
-    <section class="uk-section uk-padding-remove-top mt-[-40px]">
+    <section class="uk-section uk-padding-remove-top">
       <div class="uk-container">
         <div
           class="bg-[#1E252B] rounded-[10px] flex flex-col items-center text-center py-[40px] sm:py-[70px] px-[22px] relative"
@@ -590,23 +573,7 @@
                 href="#"
                 class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full"
               >
-                <img
-                  width="8"
-                  src="../assets/images/icons/facebook.svg"
-                  alt="ico"
-                />
-              </a>
-              <a
-                href="#"
-                class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full"
-              >
                 <img src="../assets/images/icons/instagram.svg" alt="ico" />
-              </a>
-              <a
-                href="#"
-                class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full"
-              >
-                <img src="../assets/images/icons/twitter.svg" alt="ico" />
               </a>
               <a
                 href="#"
@@ -618,7 +585,7 @@
                 href="#"
                 class="icon icon-collapse flex items-center justify-center bg-[#034ABE] w-[40px] h-[40px] rounded-full"
               >
-                <img src="../assets/images/icons/linkedin.svg" alt="ico" />
+                <img src="../assets/images/icons/telegram.svg" alt="ico" />
               </a>
             </div>
           </li>
@@ -630,7 +597,7 @@
               >Home</a
             >
             <a
-              href="product.html"
+              href="brands.html"
               class="main-color-p font-medium line-animation"
               >Products</a
             >
@@ -638,7 +605,7 @@
               >About</a
             >
             <a
-              href="brands.html"
+              href="./index.html#clients"
               class="main-color-p font-medium line-animation"
               >Projects</a
             >

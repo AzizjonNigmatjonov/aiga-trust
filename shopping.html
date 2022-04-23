@@ -13,6 +13,8 @@
   <link rel="icon" href="../assets/logo.svg" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 </head>
 
 <body>
@@ -200,33 +202,33 @@
       <div class="mt-[30px]" uk-grid uk-scrollspy="target: .anim; cls: uk-animation-fade; delay: 100; repeat: true">
         <div class="uk-width-expand@m">
           <div class="uk-grid-small items-center" uk-grid uk-lightbox="animation: slide">
-            <div class="uk-width-1-3">
-              <div class="uk-grid-small uk-child-width-1-1" uk-grid>
+            <div class="uk-width-1-3@s">
+              <div class="uk-grid-small uk-child-width-1-1@s uk-child-width-1-3 uk-grid-match" uk-grid>
                 <div>
                   <a class="w-full h-full" href="../assets/images/shopping/shopping-1.png">
-                    <img class="w-full h-[220px]" src="../assets/images/shopping/shopping-1.png" width="100%" height="1200" alt="img">
+                    <img class="w-full sm:h-[220px]" loading="lazy" src="../assets/images/shopping/shopping-1.png" width="100%" height="1200" alt="img">
                   </a>
                 </div>
                 <div>
                   <a class="w-full h-full" href="../assets/images/shopping/product.jpg">
-                    <img class="w-full h-[220px]" src="../assets/images/shopping/product.jpg" width="100%" height="1200" alt="img">
+                    <img class="w-full sm:h-[220px]" loading="lazy" src="../assets/images/shopping/product.jpg" width="100%" height="1200" alt="img">
                   </a>
                 </div>
                 <div>
                   <a class="w-full h-full" href="../assets/images/shopping/shopping-1.png">
-                    <img class="w-full h-[220px]" src="../assets/images/shopping/shopping-1.png" width="100%" height="1200" alt="img">
+                    <img class="w-full sm:h-[220px]" loading="lazy" src="../assets/images/shopping/shopping-1.png" width="100%" height="1200" alt="img">
                   </a>
                 </div>
               </div>
             </div>
             <div class="uk-width-expand">
               <a href="../assets/images/shopping/product.jpg">
-                <img class="w-full h-full" src="../assets/images/shopping/product.jpg" width="100%" height="1200"  alt="img">
+                <img class="w-full h-full" loading="lazy" src="../assets/images/shopping/product.jpg" width="100%" height="1200"  alt="img">
               </a>
             </div>
           </div>
         </div>
-        <div class="uk-width-1-3">
+        <div class="uk-width-1-3@m">
           <div class="flex flex-col items-center md:block">
             <p class="text-[#374151] font-[400] text-[20px] mb-[40px]">
               Ecophon Solo™ Rectangle Akutex HS акустическое решение
@@ -267,6 +269,89 @@
           влажностью и коррозионной активностью,панели не бояться прямого
           попадания брызг.
         </p>
+      </div>
+
+      <div class="shadow-inner shopping-table rounded-[8px] pt-[40px] overflow-hidden my-[40px]">
+        <ul class="header">
+          <li>
+            <h4>Name</h4>
+          </li>
+          <li>
+            <h4>description</h4>
+          </li>
+          <li>
+            <h4>Attribute1</h4>
+          </li>
+          <li>
+            <h4>attribute2</h4>
+          </li>
+          <li>
+            <h4>attribute2</h4>
+          </li>
+        </ul>
+        <ul class="body mt-[10px]">
+          <li>
+            <h5>Item attribute</h5>
+            <span>id code </span>
+          </li>
+          <li x-data="{ open: false }">
+            <p x-on:click="open = ! open" x-bind:class="open ? 'h-auto' : 'h-[40px]'" class="cursor-pointer overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</p>
+          </li>
+          <li>
+            <p>$70.00</p>
+            <span>CAD</span>
+          </li>
+          <li>
+            <p>-$270.00</p>
+            <span>CAD</span>
+          </li>
+          <li>
+            <p>$500.00</p>
+            <span>CAD</span>
+          </li>
+        </ul>
+        <ul class="body mt-[10px]">
+          <li>
+            <h5>Item attribute</h5>
+            <span>5684236527</span>
+          </li>
+          <li x-data="{ open: false }">
+            <p x-on:click="open = ! open" x-bind:class="open ? 'h-auto' : 'h-[40px]'" class="cursor-pointer overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</p>
+          </li>
+          <li>
+            <p>$70.00</p>
+            <span>CAD</span>
+          </li>
+          <li>
+            <p>-$270.00</p>
+            <span>CAD</span>
+          </li>
+          <li>
+            <p>$500.00</p>
+            <span>CAD</span>
+          </li>
+        </ul>
+        <ul class="body mt-[10px]">
+          <li>
+            <h5>Item attribute</h5>
+            <span>5684236528</span>
+          </li>
+          <li x-data="{ open: false }">
+            <p x-on:click="open = ! open" x-bind:class="open ? 'h-auto' : 'h-[40px]'" class="cursor-pointer overflow-hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...</p>
+          </li>
+          <li>
+            <p>$70.00</p>
+            <span>CAD</span>
+          </li>
+          <li>
+            <p>-$270.00</p>
+            <span>CAD</span>
+          </li>
+          <li>
+            <p>$500.00</p>
+            <span>CAD</span>
+          </li>
+        </ul>
       </div>
     </div>
   </main>

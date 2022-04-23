@@ -625,9 +625,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.mx-\[100px\] {
-  margin-left: 100px;
-  margin-right: 100px;
+.my-\[\] {
+  margin-top: ;
+  margin-bottom: ;
+}
+
+.my-\[30px\] {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.my-\[40px\] {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .mt-\[30px\] {
@@ -706,32 +716,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 60px;
 }
 
-.mr-\[100px\] {
-  margin-right: 100px;
+.mt-\[20xp\] {
+  margin-top: 20xp;
 }
 
-.mr-\[140px\] {
-  margin-right: 140px;
-}
-
-.mb-\[-100px\] {
-  margin-bottom: -100px;
-}
-
-.mb-\[-60px\] {
-  margin-bottom: -60px;
-}
-
-.mb-\[-50px\] {
-  margin-bottom: -50px;
-}
-
-.mb-\[-px\] {
-  margin-bottom: -px;
-}
-
-.mb-\[-55px\] {
-  margin-bottom: -55px;
+.mt-\[20px\] {
+  margin-top: 20px;
 }
 
 .block {
@@ -786,12 +776,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 220px;
 }
 
-.h-\[420px\] {
-  height: 420px;
+.h-auto {
+  height: auto;
 }
 
-.h-\[20px\] {
-  height: 20px;
+.h-\[\] {
+  height: ;
+}
+
+.h-\[100px\] {
+  height: 100px;
+}
+
+.h-\[500px\] {
+  height: 500px;
 }
 
 .w-full {
@@ -1149,14 +1147,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.5rem;
 }
 
-.px-\[\] {
-  padding-left: ;
-  padding-right: ;
-}
-
-.px-\[100px\] {
-  padding-left: 100px;
-  padding-right: 100px;
+.py-\[4\] {
+  padding-top: 4;
+  padding-bottom: 4;
 }
 
 .pb-\[10px\] {
@@ -1167,28 +1160,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 140px;
 }
 
+.pt-\[40px\] {
+  padding-top: 40px;
+}
+
 .pb-\[70px\] {
   padding-bottom: 70px;
 }
 
 .pb-10 {
   padding-bottom: 2.5rem;
-}
-
-.pr-\[140px\] {
-  padding-right: 140px;
-}
-
-.pt-\[100px\] {
-  padding-top: 100px;
-}
-
-.pt-\[40\] {
-  padding-top: 40;
-}
-
-.pt-\[40px\] {
-  padding-top: 40px;
 }
 
 .text-center {
@@ -1325,6 +1306,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-inner {
+  --tw-shadow: 0px 1.5px 0px 0px #04165D;
+  --tw-shadow-colored: 0px 1.5px 0px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-\[\#034ABE\] {
   outline-color: #034ABE;
 }
@@ -1404,12 +1391,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 0px;
 }
 
-.group:hover .group-hover\:ml-\[10px\] {
-  margin-left: 10px;
-}
-
 .group:hover .group-hover\:mr-\[10px\] {
   margin-right: 10px;
+}
+
+.group:hover .group-hover\:ml-\[10px\] {
+  margin-left: 10px;
 }
 
 @media (min-width: 640px) {
@@ -1431,6 +1418,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:mt-\[120px\] {
     margin-top: 120px;
+  }
+
+  .sm\:h-\[220px\] {
+    height: 220px;
   }
 
   .sm\:min-h-\[100vh\] {
@@ -1494,6 +1485,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:block {
     display: block;
+  }
+
+  .md\:h-\[220px\] {
+    height: 220px;
   }
 
   .md\:w-\[600px\] {

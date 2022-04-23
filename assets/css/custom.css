@@ -110,6 +110,12 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
   }
+  .shopping-table {
+    overflow-x: scroll !important;
+  }
+  .shopping-table .header, .shopping-table .body {
+    width: 840px !important;
+  }
 }
 
 .clients-section .clients-list {
@@ -233,6 +239,66 @@ h1, h2, h3, h4, h5, h6 {
 .clients-section .uk-dotnav > .uk-active > * {
   background-color: #034ABE !important;
   width: 24px;
+}
+
+.shopping-table .header h4 {
+  color: #464F60;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.shopping-table .body:nth-child(even) {
+  background: #EBF0FA;
+}
+
+.shopping-table .body h5 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #171C26;
+}
+
+.shopping-table .body p {
+  color: #464F60;
+  font-size: 15px;
+}
+
+.shopping-table .body span {
+  color: #687182;
+  font-size: 13px;
+}
+
+.shopping-table .header, .shopping-table .body {
+  padding: 8px 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #464F60 !important;
+}
+
+.shopping-table .header li:nth-child(1), .shopping-table .body li:nth-child(1) {
+  width: 180px;
+}
+
+.shopping-table .header li:nth-child(2), .shopping-table .body li:nth-child(2) {
+  width: 280px;
+}
+
+.shopping-table .header li:nth-child(3), .shopping-table .body li:nth-child(3) {
+  width: 120px;
+}
+
+.shopping-table .header li:nth-child(4), .shopping-table .body li:nth-child(4) {
+  width: 120px;
+}
+
+.shopping-table .header li:nth-child(5), .shopping-table .body li:nth-child(5) {
+  width: 120px;
+  text-align: right;
 }
 
 .lds-ring {
